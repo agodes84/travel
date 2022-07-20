@@ -194,6 +194,18 @@ table {
     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+/* red-hat-text-500 - latin */
+@font-face {
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+        url('../fonts/red-hat-text-v12-latin-500.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/red-hat-text-v12-latin-500.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 /* magra-700 - latin */
 @font-face {
     font-family: 'Magra';
@@ -231,7 +243,7 @@ body {
 /*Header styles start*/
 
 .header {
-    
+
     background: rgba(242, 120, 92, 0.7);
     position: fixed;
     top: 0;
@@ -254,7 +266,7 @@ body {
     align-items: center;
     justify-content: space-between;
     height: 90px;
-    
+
 }
 
 .header_logo {
@@ -296,6 +308,21 @@ body {
     opacity: .75;
 }
 
+.login_button {
+    background: #0D606F;
+    border-radius: 10px;
+    width: 103px;
+    height: 41px;
+    background: #0D606F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
 /*Header styles end*/
 
 /*Preview styles start*/
@@ -304,6 +331,79 @@ body {
     height: 100vh;
     background: url(../img/garrett-parker-DlkF4-dbCOU-unsplash\ 1\ \(1\).jpg) no-repeat center;
     background-size: cover;
+    padding-top: 122px;
+}
+
+.plan_your_trip {
+    max-width: 892px;
+}
+
+.preview_title {
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 96px;
+    color: #FFFFFF;
+    margin-bottom: 46px;
+}
+
+.preview_subtitle {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 46px;
+    max-width: 723px;
+}
+
+.search_form {
+    width: 892px;
+    height: 95px;
+    background-color: rgba(255, 255, 255);
+    border-radius: 16px;
+    opacity: 0.7;
+
+}
+
+.search {
+    display: flex;
+}
+
+.search_form_input {
+    border: none;
+    height: 24px;
+    background-color: rgba(255, 255, 255);
+    font-size: 18px;
+    font-style: italic;
+    width: 560px;
+    vertical-align: middle;
+    margin: 32px 45px 41px 41px;
+}
+
+input::placeholder {
+
+    color: #F2785C;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.button_start_planning {
+
+    background: #0D606F;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    height: 59px;
+    width: 228px;
+    margin: 18px 18px 18px;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+
 }
 
 /*Preview styles end*/
